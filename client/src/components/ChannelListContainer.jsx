@@ -4,6 +4,7 @@ import Cookies from 'universal-cookie';
 
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
 import Logo from '../assets/Logo.svg'
+import Videocall from '../assets/videocall.svg'
 import LogoutIcon from '../assets/Logout.svg'
 
 const cookies = new Cookies();
@@ -13,6 +14,10 @@ const SideBar = ({ logout }) => (
         <div className="channel-list__sidebar__icon1">
             <div className="icon1__inner">
                 <img src={Logo} alt="Logo" width="35" />
+            </div>
+            <div className="icon1__inner" id = "videocall_icon"onClick={()=>window.open('https://video-chat-konvo.netlify.app/')}>
+                <img src={Videocall} alt="Videocall" width="39" />
+                {/* <button onClick={()=>window.open('https://video-chat-konvo.netlify.app/')}>videocall</button> */}
             </div>
         </div>
         <div className="channel-list__sidebar__icon2">
