@@ -15,7 +15,7 @@ const SideBar = ({ logout }) => (
             <div className="icon1__inner">
                 <img src={Logo} alt="Logo" width="35" />
             </div>
-            <div className="icon1__inner" id = "videocall_icon"onClick={()=>window.open('https://video-chat-konvo.netlify.app/')}>
+             <div className="icon1__inner" id = "videocall_icon" onClick={()=>window.open('https://angularhttp-c976c.web.app/?id=-N30NQ96Dc4bNFEjSS6E')}>  
                 <img src={Videocall} alt="Videocall" width="39" />
                 {/* <button onClick={()=>window.open('https://video-chat-konvo.netlify.app/')}>videocall</button> */}
             </div>
@@ -26,7 +26,8 @@ const SideBar = ({ logout }) => (
             </div>
         </div>
     </div>
-);
+  );
+
 
 const CompanyHeader = () => (
     <div className="channel-list__header">
@@ -61,6 +62,7 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
 
     return (
         <>
+
             <SideBar logout={logout} />
             <div className="channel-list__list__wrapper">
                 <CompanyHeader />
@@ -120,7 +122,7 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
 
 const ChannelListContainer = ({ setCreateType, setIsCreating, setIsEditing }) => {
     const [toggleContainer, setToggleContainer] = useState(false);
-
+   
     return (
         <>
             <div className="channel-list__container">
