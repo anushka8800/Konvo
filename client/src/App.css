@@ -431,7 +431,15 @@
     align-items: center;
     justify-content: center;
   }
-
+  .Iframe_1{
+    border: 0px;
+    padding-bottom: 20vmax;
+    padding-top: 0vmax;
+    width: 20vmax;
+    height: 20vmax;
+    position:absolute;
+    right: 0;;
+  }
   #videocall_icon {
     position: relative;
     margin-top: 10px;
@@ -451,9 +459,8 @@
     border-radius: 9999px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
     cursor: pointer;
-      
     position: absolute;
-    top: 90%;
+    top: 15%;
   }
   
   .icon2__inner {
